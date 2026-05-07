@@ -5,21 +5,21 @@
 class Felix < Formula
   desc "let felix fix it"
   homepage "https://alchemain.com"
-  version "0.2.9"
+  version "0.2.10"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alchemain/felix/releases/download/v0.2.9/felix_0.2.9_Darwin_x86_64.tar.gz"
-      sha256 "a43390a9cfe1980614b8860f847fad7f6da3d595aa27aefc9a4c517414b5693d"
+      url "https://github.com/alchemain/felix/releases/download/v0.2.10/felix_0.2.10_Darwin_x86_64.tar.gz"
+      sha256 "327273022fe308e9a5c4e13cefac5f7ee710b51405d1d085ccfa6ed2dd2b9956"
 
       define_method(:install) do
         bin.install "felix"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alchemain/felix/releases/download/v0.2.9/felix_0.2.9_Darwin_arm64.tar.gz"
-      sha256 "27a80937efa13efdbf008f2cb55e2343b5696d2fbea562bbefe987c42ffa2a65"
+      url "https://github.com/alchemain/felix/releases/download/v0.2.10/felix_0.2.10_Darwin_arm64.tar.gz"
+      sha256 "727f92268846a140bce3b650fb0a159a2128c0570b074c47f36606a2b1e758d0"
 
       define_method(:install) do
         bin.install "felix"
@@ -29,15 +29,15 @@ class Felix < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alchemain/felix/releases/download/v0.2.9/felix_0.2.9_Linux_x86_64.tar.gz"
-      sha256 "6e619149c673725f33735134587a5f32645ff9546d6d75093c1dd57bbb9b6f4d"
+      url "https://github.com/alchemain/felix/releases/download/v0.2.10/felix_0.2.10_Linux_x86_64.tar.gz"
+      sha256 "5e1b08a34b8232bce69d37826faa2c093c183e6f5bc8a2ec14a6c16fc8928f6c"
       define_method(:install) do
         bin.install "felix"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alchemain/felix/releases/download/v0.2.9/felix_0.2.9_Linux_arm64.tar.gz"
-      sha256 "3f9c812d7e2a74300958f5209e4b29abf83cd69362557fea8738127c0dafd121"
+      url "https://github.com/alchemain/felix/releases/download/v0.2.10/felix_0.2.10_Linux_arm64.tar.gz"
+      sha256 "d3bfc27e64f69ce2e7d184b80f61ff70e167858517d478e30f4523058f452bb0"
       define_method(:install) do
         bin.install "felix"
       end
